@@ -24,9 +24,12 @@ const styles = StyleSheet.create({
     
   },
   header: {
-    
+    minHeight:93,
     backgroundColor: "#2C4877",
-    paddingTop: 40,
+    paddingTop:40,
+    flexDirection:"row",
+    justifyContent:"space-between",
+    paddingHorizontal:30,
   },
 
 });
