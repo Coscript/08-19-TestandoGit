@@ -13,8 +13,8 @@ const LinkItem = (props: any) => {
 const StylesLink = StyleSheet.create ({
     text: {      
       color: "#4A4A4C",
-      fontSize: 13.71,
-      marginTop: 10,
+      fontSize: 13.71,            
+      flex: 1,
     }
 
 })
@@ -33,7 +33,21 @@ const LinksImportantes = () => {
 };
 const StylesLinkImportantes = StyleSheet.create ({
   container: {      
+    flexDirection: "row",
+    justifyContent: "space-between",
     
+    paddingHorizontal: 2,    
+    paddingVertical: 10,
+    
+    shadowColor: "#F00",
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 1,
+    elevation: 4,
+    borderColor: "gray",
   }
 
 })
