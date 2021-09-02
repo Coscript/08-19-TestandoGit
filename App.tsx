@@ -2,12 +2,42 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
 
+const LinkItem = (props: any) => {
+  return(
+      <Text style= {StylesLink.text} > 
+        {props.name} 
+      </Text>
+  );
+};
+
+const StylesLink = StyleSheet.create ({
+    text: {      
+      color: "#4A4A4C",
+      fontSize: 13.71,
+      marginTop: 10,
+    }
+
+})
+
+
+
 const LinksImportantes = () => {
   return (
-  <View> 
-        <Text> Primeiro componente </Text>
+  <View style={StylesLinkImportantes.container}> 
+        <LinkItem name="Home" />
+        <LinkItem name="Post" />
+        <LinkItem name="Videos" />
+        <LinkItem name="Photos" />
+        <LinkItem name="Community" />
   </View>);
 };
+const StylesLinkImportantes = StyleSheet.create ({
+  container: {      
+    
+  }
+
+})
+
 
 
 export default function App() {
