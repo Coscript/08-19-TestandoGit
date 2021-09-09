@@ -36,18 +36,12 @@ const StylesLinkImportantes = StyleSheet.create ({
     flexDirection: "row",
     justifyContent: "space-between",
     
-    paddingHorizontal: 2,    
+    paddingHorizontal: 1.40,    
     paddingVertical: 10,
     
-    shadowColor: "#F00",
-    shadowOffset: {
-      width: 0,
-      height: 12,
-    },
-    shadowOpacity: 0.58,
-    shadowRadius: 1,
-    elevation: 4,
-    borderColor: "gray",
+    borderBottomColor: "#F0F0F0",
+    borderBottomWidth: 1,
+    
   }
 
 })
