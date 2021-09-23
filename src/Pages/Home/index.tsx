@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleSheet, View, Text, Image, TextInput } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { StyleSheet, View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import { StatusBar } from "expo-status-bar";
 
 
@@ -52,13 +53,16 @@ const StylesLinkImportantes = StyleSheet.create ({
 
 const Home = () => {
     
+    const navigation: any = useNavigation();
         
     return(
 
     <View style={styles.container}>
       <View style={styles.header}>
+        <TouchableOpacity onPress={() => navigation.navigate("Login")}>
         <Image source={
             require("../../assets/arrow-left.png")}/>
+        </TouchableOpacity>
         <View style={styles.inputTextView}>
 
         <Image source={
